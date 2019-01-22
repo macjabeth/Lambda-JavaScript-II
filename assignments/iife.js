@@ -47,5 +47,5 @@ const data = (async () => await fetch('https://api.secret-sauce.club/'))();
 // iffy-wiffy with a paramy-wammy
 
 ((call, repeat) => {
-  for (let i = 0; i < repeat; i++) call();
-})();
+  for (let i = 0; i <= repeat; i++) call(i);
+})(console.log, 10);
