@@ -1,17 +1,23 @@
 // classical approach
 
-(() => {
+(function () {
   console.log('Variation 1');
-})();
+}());
 
-(() => {
+(function () {
   console.log('Variation 2');
 })();
 
 // expression approach
 
-!(() => {
+!function() {
   console.log('Ooh, fancy.');
+}();
+
+// es6 approach
+
+(() => {
+  console.log('new features!');
 })();
 
 // private variables
